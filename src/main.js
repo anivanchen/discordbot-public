@@ -32,7 +32,7 @@ client.on('message', message => {
             message.channel.send("Some cutie(s) were metioned. They are a cutie. :heart_eyes:");
         }
         logging.execute("Cutie List", message.author.username, message.createdTimestamp, number, client)
-    } else return;
+    }
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
