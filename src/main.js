@@ -44,7 +44,7 @@ client.on('message', message => {
     try {
 	    client.commands.get(command).execute(message, args, client, Discord, logging);
     } catch (error) {
-        logging.execute(error, "", "", "", client);
+        logging.execute("**"+ error + "**", "", "", "", client);
     }
 
 });
